@@ -1,0 +1,28 @@
+:root {
+    --primary: #3E0703;
+    --secondary: #660B05;
+    --third: #8C1007;
+    --fourth: #FFF0C4;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+.image-background {
+    background-image: url("imgs/background.jpg");
+    background-color: var(--primary);
+    padding: 150px;
+    color: var(--fourth);
+    width: 100%;
+    height: 100%;
+}
+
+.image-background h1, p {
+    background-color: var(--secondary);
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 30px;;
+    color: var(--fourth);
+}
