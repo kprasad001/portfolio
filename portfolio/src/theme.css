@@ -1,0 +1,213 @@
+@import './fonts.css';
+
+:root {
+	--font-size: 16px;
+	--background: #FFF0C4;
+	--foreground: #3E0703;
+	--card: #ffffff;
+	--card-foreground: #3E0703;
+	--popover: #ffffff;
+	--popover-foreground: #3E0703;
+	--primary: #3E0703;
+	--primary-foreground: #FFF0C4;
+	--secondary: #660B05;
+	--secondary-foreground: #FFF0C4;
+	--muted: #FFF0C4;
+	--muted-foreground: #8C1007;
+	--accent: #8C1007;
+	--accent-foreground: #FFF0C4;
+	--destructive: #d4183d;
+	--destructive-foreground: #ffffff;
+	--border: #3e0703;
+	--input: transparent;
+	--input-background: #ffffff;
+	--switch-background: #cbced4;
+	--font-weight-medium: 500;
+	--font-weight-normal: 400;
+	--ring: #8C1007;
+	--chart-1: oklch(0.646 0.222 41.116);
+	--chart-2: oklch(0.6 0.118 184.704);
+	--chart-3: oklch(0.398 0.07 227.392);
+	--chart-4: oklch(0.828 0.189 84.429);
+	--chart-5: oklch(0.769 0.188 70.08);
+	--radius: 0rem;
+	--sidebar: oklch(0.985 0 0);
+	--sidebar-foreground: oklch(0.145 0 0);
+	--sidebar-primary: #030213;
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.97 0 0);
+	--sidebar-accent-foreground: oklch(0.205 0 0);
+	--sidebar-border: oklch(0.922 0 0);
+	--sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+	--background: oklch(0.145 0 0);
+	--foreground: oklch(0.985 0 0);
+	--card: oklch(0.145 0 0);
+	--card-foreground: oklch(0.985 0 0);
+	--popover: oklch(0.145 0 0);
+	--popover-foreground: oklch(0.985 0 0);
+	--primary: oklch(0.985 0 0);
+	--primary-foreground: oklch(0.205 0 0);
+	--secondary: oklch(0.269 0 0);
+	--secondary-foreground: oklch(0.985 0 0);
+	--muted: oklch(0.269 0 0);
+	--muted-foreground: oklch(0.708 0 0);
+	--accent: oklch(0.269 0 0);
+	--accent-foreground: oklch(0.985 0 0);
+	--destructive: oklch(0.396 0.141 25.723);
+	--destructive-foreground: oklch(0.637 0.237 25.331);
+	--border: oklch(0.269 0 0);
+	--input: oklch(0.269 0 0);
+	--ring: oklch(0.439 0 0);
+	--font-weight-medium: 500;
+	--font-weight-normal: 400;
+	--chart-1: oklch(0.488 0.243 264.376);
+	--chart-2: oklch(0.696 0.17 162.48);
+	--chart-3: oklch(0.769 0.188 70.08);
+	--chart-4: oklch(0.627 0.265 303.9);
+	--chart-5: oklch(0.645 0.246 16.439);
+	--sidebar: oklch(0.205 0 0);
+	--sidebar-foreground: oklch(0.985 0 0);
+	--sidebar-primary: oklch(0.488 0.243 264.376);
+	--sidebar-primary-foreground: oklch(0.985 0 0);
+	--sidebar-accent: oklch(0.269 0 0);
+	--sidebar-accent-foreground: oklch(0.985 0 0);
+	--sidebar-border: oklch(0.269 0 0);
+	--sidebar-ring: oklch(0.439 0 0);
+}
+
+html {
+	font-size: var(--font-size);
+	font-family: "roboto", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	color: var(--primary);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background-color: var(--background);
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	padding: 60px;
+	color: var(--primary);
+	border-bottom-style: solid;
+	border-color: var(--border);
+}
+
+nav p {
+	text-align: left;
+	font-weight: 500;
+}
+
+nav .nav-links {
+	display: flex;
+	margin-left: auto;
+	gap: 25px;
+	align-items: center;
+	font-weight: 300;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 150px;
+	background-color: var(--background);
+}
+
+section.introduction p {
+	width: fit-content;
+	border: solid;
+	border-color: var(--border);
+	padding: 15px;
+	font-weight: 200;
+	font-size: 24px;
+}
+
+section.introduction h1 {
+	margin-top: 30px;
+	width: fit-content;
+	padding: 15px;
+	font-weight: 600;
+	font-size: 72px;
+}
+
+section.introduction h2 {
+	width: fit-content;
+	padding: 15px;
+	font-weight: 500;
+	font-size: 56px;
+}
+
+h1 {
+	font-size: var(--text-2xl);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+	
+}
+
+h2 {
+	font-size: var(--text-xl);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: var(--text-lg);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+}
+
+h4 {
+	font-size: var(--text-base);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+}
+
+label {
+	font-size: var(--text-base);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+}
+
+button {
+	font-size: var(--text-base);
+	font-weight: var(--font-weight-medium);
+	line-height: 1.5;
+}
+
+input {
+	font-size: var(--text-base);
+	font-weight: var(--font-weight-normal);
+	line-height: 1.5;
+}
+
+.line {
+	width: min(680px, 72vw);
+	height: 2px;
+	margin: 12px auto 28px;
+	background: linear-gradient(
+		90deg,
+		transparent 0%,
+		var(--primary) 18%,
+		var(--primary) 82%,
+		transparent 100%
+	);
+	opacity: 0.75;
+}

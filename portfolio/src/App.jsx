@@ -4,32 +4,35 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<>
+		<body>
+			<nav class="top-bar fixed">
+				<p>Kishan Prasad</p>
+				<div className="nav-links">
+					<a>Home</a>
+					<a>Projects</a>
+					<a>Experience</a>
+					<a>Skills</a>
+					<a>About</a>
+					<a>Contact</a>
+				</div>
+			</nav>
+			<main>
+				<section className='introduction'>
+					<p>Developer & Designer</p>
+					<h1>Kishan Prasad</h1>
+					<div className='line'></div>
+					<h2>Computer Science - Software Practice Specialization · University of Alberta</h2>
+					<p>AI / Backend / DevOps / Full-Stack — building reliable systems with clean 
+						architecture and strong engineering fundamentals.</p>
+				</section>
+			</main>
+		</body>
+		</>
+	)
 }
 
 export default App
