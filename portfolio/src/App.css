@@ -10,8 +10,7 @@ nav {
 	position: fixed;
 	top: 0;
 	display: flex;
-	align-items: center;
-	gap: 20px;
+	justify-content: left;
 	background-color: var(--background);
 	width: 100%;
 	font-size: 26px;
@@ -26,12 +25,10 @@ nav p {
 	font-weight: 500;
 }
 
-nav .nav-links {
-	display: flex;
-	margin-left: auto;
-	gap: 25px;
-	align-items: center;
-	font-weight: 300;
+
+a:hover {
+	color: var(--accent);
+	
 }
 
 .line {
@@ -48,3 +45,72 @@ nav .nav-links {
 	opacity: 0.75;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav .nav-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+    a {
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      margin: 20px 0;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: var(--primary);
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      transition: .5s;
+      z-index: 1;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid var(--secondary);
+        border-bottom: 2px solid var(--secondary);
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--secondary);
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: var(--background);
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
+    }
+  }

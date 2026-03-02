@@ -12,7 +12,7 @@ function Home() {
 			<p>AI / Backend / DevOps / Full-Stack — building reliable systems with clean 
 				architecture and strong engineering fundamentals.</p>
 			<button className='button'>
-				<p>Resume</p>
+				<span>Resume</span>
 			</button>
 			<div className="social-media">
 				<a href="https://github.com/kprasad001" className="github">

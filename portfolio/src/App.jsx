@@ -1,6 +1,9 @@
 import './App.css'
 import Home from './components/home.jsx'
 import AboutMe from './components/about_me.jsx'
+//import Projects from './components/projects.jsx'
+//import Experience from './components/experience.jsx'
+import { Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 	return (
@@ -8,17 +11,20 @@ function App() {
 		<nav>
 			<p>Kishan Prasad</p>
 			<div className="nav-links">
-				<a>Home</a>
-				<a>Projects</a>
-				<a>Experience</a>
-				<a>Skills</a>
-				<a>About</a>
+				<Link to="/">Home</Link>
+				<a href="/projects">Projects</a>
+				<a href='/experience'>Experience</a>
+				<Link to="/about">About</Link>
 				<a>Contact</a>
 			</div>
 		</nav>
 		<main>
-			<Home />
-			<AboutMe />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<AboutMe />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/experience" element={<Experience />} />
+			</Routes>
 		</main>
 		</>
 	)
