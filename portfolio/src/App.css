@@ -6,3 +6,45 @@
 	text-align: center;
 }
 
+nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background-color: var(--background);
+	width: 100%;
+	font-size: 26px;
+	padding: 15px;
+	color: var(--primary);
+	border-bottom-style: solid;
+	border-color: var(--border);
+}
+
+nav p {
+	text-align: left;
+	font-weight: 500;
+}
+
+nav .nav-links {
+	display: flex;
+	margin-left: auto;
+	gap: 25px;
+	align-items: center;
+	font-weight: 300;
+}
+
+.line {
+	width: min(680px, 72vw);
+	height: 2px;
+	margin: 12px auto 28px;
+	background: linear-gradient(
+		90deg,
+		transparent 0%,
+		var(--primary) 18%,
+		var(--primary) 82%,
+		transparent 100%
+	);
+	opacity: 0.75;
+}
+
