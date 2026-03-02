@@ -11,3 +11,68 @@
 	background-color: var(--background);
 }
 
+.contact-intro {
+	max-width: 860px;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.contact-links {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 16px;
+}
+
+.contact-links a {
+	text-decoration: none;
+	color: var(--secondary);
+	font-size: 18px;
+}
+
+.contact-form {
+	margin-top: 28px;
+	width: 100%;
+	max-width: 720px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
+}
+
+.contact-form label {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid var(--border);
+	background: var(--card);
+	color: var(--primary);
+	font-size: 16px;
+	font-family: inherit;
+	outline: none;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.contact-btn {
+	margin-top: 6px;
+	padding: 12px 18px;
+	border: 1px solid var(--secondary);
+	background: var(--secondary);
+	color: var(--secondary-foreground);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	align-self: flex-start;
+}
+
