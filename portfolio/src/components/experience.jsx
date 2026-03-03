@@ -4,38 +4,62 @@ function Experience() {
 	const experienceData = [
 		{
 			id: 1,
-			role: 'Software Developer',
-			company: 'Alberta Bionix',
+			role: 'Software Developer & Researcher',
+			company: 'Alberta Bionix - Student Led Engineering Club',
 			location: 'Edmonton, AB',
-			time: '2025 - Present',
+			time: 'September 2025 - Present',
 			highlights: [
-				'Created an EMG acquisition interface for collecting and visualizing real-time sensor data.',
-				'Improved signal processing workflows to help evaluate electrode placement quality.',
-				'Worked closely with hardware-focused teammates to validate low-latency control behavior.'
+				'Contributed to the development of responsive prosthetic control by enabling accurate detection of muscle activation for movement intent.',
+				'Secured funding for the club by pitching technical projects and research goals to external sponsors.',
+				"Developed and deployed a custom program to support experiments with 50+ able-bodied and amputee participants, evaluating muscle activation patterns."
 			]
 		},
 		{
 			id: 2,
-			role: 'Full-Stack Developer',
-			company: 'Hackathon Projects',
+			role: 'Webmaster & Administration',
+			company: 'Help Young Minds Initiative - Student Led Tutoring Club',
 			location: 'Edmonton, AB',
-			time: '2025 - 2026',
+			time: 'April 2025 - Present',
 			highlights: [
-				'Built dashboard-style web apps to track workflows and reduce user friction.',
-				'Implemented backend APIs and database models for reliable data handling.',
-				'Delivered polished demos with clear UX in short iteration cycles.'
+				'Supported preventive maintenance of the site by updating content, blogs, and features to reduce future issues.',
+				'Boosted blog engagement by making educational content more accessible to students and parents.',
+				'Collaborated with executive team members to align website content with organizational goals.'
 			]
 		},
 		{
 			id: 3,
-			role: 'ML + Systems Contributor',
-			company: 'NeuroMotion Team',
+			role: 'Assistant Electrician',
+			company: 'Laser Electrical Ltd.',
 			location: 'Edmonton, AB',
-			time: '2025',
+			time: 'June 2023 - August 2025',
 			highlights: [
-				'Pre-processed EEG streams and extracted features for model training.',
-				'Integrated model predictions into a real-time interface for movement intent display.',
-				'Collaborated across software and research roles to validate results.'
+				'Collaborated with electricians to solve technical problems, contributing to installations and repairs.',
+				'Operated electrical testing and measurement tools to assess system performance and verify functionality.',
+				'Reviewed and interpreted electrical schematics and technical drawings under master electrician supervision.'
+			]
+		},
+		{
+			id: 4,
+			role: 'Field Maintenance',
+			company: 'Lewis Estates Golf Course',
+			location: 'Edmonton, AB',
+			time: 'June 2022 - September 2022',
+			highlights: [
+				'Collaborated with grounds crew members to complete projects efficiently, demonstrating teamwork.',
+				'Monitored field conditions to detect risks and implement timely solutions for sustained performance.',
+				'Maintained accurate records of maintenance activities for accountability and continuous improvement.'
+			]
+		},
+		{
+			id: 5,
+			role: 'Crew Member',
+			company: "Wendy's",
+			location: 'Edmonton, AB',
+			time: 'June 2021 - April 2022',
+			highlights: [
+				'Maintained cleanliness and organization to meet health and safety regulations.',
+				'Demonstrated strong time management and multitasking to balance multiple responsibilities.',
+				'Adapted quickly to changing priorities during high-volume periods while maintaining efficiency.'
 			]
 		}
 	]

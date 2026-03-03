@@ -11,18 +11,18 @@ function AboutMe() {
 			<div className='about-content'>
 				<div className='about-text'>
 					<p>
-						I'm a passionate full-stack developer with 5+ years of experience building web applications. I specialize in 
+						I'm a passionate full-stack developer with 3+ years of experience building web applications. I specialize in 
 						React, TypeScript, and modern web technologies, with a keen eye for design and user experience.
 					</p>
 					<p>
-						When I'm not coding, you'll find me playing soccer, volleyball, or playing Smash Bros with my friends.
+						When I'm not working, you'll find me playing soccer, volleyball, or playing Smash Bros with my friends.
 					</p>
 				</div>
 				<div className='about-photo'>
 					<img src={kishan1} alt='Kishan Prasad' />
 				</div>
 			</div>
-			<div className='grid'>
+			<div className='grid-about'>
 				<div className='border'> 
 					<div className='icon'>
 						<Code2/>
@@ -36,7 +36,7 @@ function AboutMe() {
 						<Blocks/>
 					</div>
 					<p>
-						Writing maintainable, scalable, and efficient code that stands the test of time.
+						Thriving in collaborative environments and contributes to shared team success.
 					</p>
 				</div>
 				<div className='border'> 
@@ -44,7 +44,7 @@ function AboutMe() {
 						<Rocket/>
 					</div>
 					<p>
-						Writing maintainable, scalable, and efficient code that stands the test of time.
+						Delivering end-to-end solutions from concept to deployment..
 					</p>
 				</div>
 			</div>
