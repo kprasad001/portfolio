@@ -57,7 +57,8 @@
 }
 
 .border {
-	padding: 50px;
+	padding: 25px;
+	width:300px;
 	border: solid;
 	border-color: var(--border);
 }

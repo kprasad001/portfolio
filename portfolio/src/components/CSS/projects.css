@@ -51,6 +51,7 @@
     grid-template-columns: repeat(auto-fit, minmax(425px, 300px));
     justify-content: center;
 	gap: 28px;
+    margin-top: 70px
 }
 
 .card {
