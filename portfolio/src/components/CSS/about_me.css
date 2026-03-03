@@ -32,7 +32,7 @@
 .about-photo {
 	width: 320px;
 	height: 380px;
-	border: 2px solid var(--border);
+	border: 8px double var(--border);
 	display: flex;
 	align-items: center;
 	justify-content: center;

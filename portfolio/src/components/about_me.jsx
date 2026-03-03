@@ -6,7 +6,7 @@ function AboutMe() {
 
 	return (
 		<section className='about-section'>
-			<h1>About</h1>
+			<h1>Little Bit About Me</h1>
 			<div className='line'></div>
 			<div className='about-content'>
 				<div className='about-text'>
@@ -15,8 +15,7 @@ function AboutMe() {
 						React, TypeScript, and modern web technologies, with a keen eye for design and user experience.
 					</p>
 					<p>
-						When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing 
-						knowledge with the developer community.
+						When I'm not coding, you'll find me playing soccer, volleyball, or playing Smash Bros with my friends.
 					</p>
 				</div>
 				<div className='about-photo'>
