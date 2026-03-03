@@ -12,185 +12,234 @@
 }
 
 .project-filters {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom:-50px;
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom:-50px;
 }
 
 .filter-chip {
-    border: 1px solid var(--border);
-    background: var(--background);
-    color: var(--primary);
-    padding: 6px 12px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+	border: 1px solid var(--border);
+	background: var(--background);
+	color: var(--primary);
+	padding: 6px 12px;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .filter-chip:hover {
-    border-color: var(--secondary);
-    color: var(--secondary);
+	border-color: var(--secondary);
+	color: var(--secondary);
 }
 
 .filter-chip.active {
-    background: var(--primary);
-    color: var(--background);
-    border-color: var(--primary);
+	background: var(--primary);
+	color: var(--background);
+	border-color: var(--primary);
 }
 
 .grid {
 	width: 100%;
 	max-width: 1200px;
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(425px, 300px));
-    justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(425px, 300px));
+	justify-content: center;
 	gap: 28px;
-    margin-top: 70px
+	margin-top: 70px
 }
 
 .card {
-    display: grid;
-    border-radius: 6px;
-    border: 7px double var(--border);
-    background: var(--card);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+	display: grid;
+	border-radius: 6px;
+	border: 7px double var(--border);
+	background: var(--card);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	cursor: pointer;
 }
 
 .card:hover {
-    transform: translateY(-6px);
+	transform: translateY(-6px);
 }
 
 .card-image {
-    width: 100%;
-    height: 220px;
-    margin: 0;
-    border-radius: 0;
-    object-fit: cover;
-    display: block;
-    background-color: var(--muted);
+	width: 100%;
+	height: 220px;
+	margin: 0;
+	border-radius: 0;
+	object-fit: cover;
+	display: block;
+	background-color: var(--muted);
 }
 
 .card-content {
-    padding: 16px 16px 18px;
+	padding: 16px 16px 18px;
 }
 
 .card-title {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--primary);
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--primary);
 }
 
 .card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 12px;
 }
 
 .tag-chip {
-    display: inline-block;
-    border: 1px solid var(--border);
-    padding: 4px 10px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--background);
-    background: var(--primary);
-    border-radius: 8px;
+	display: inline-block;
+	border: 1px solid var(--border);
+	padding: 4px 10px;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--background);
+	background: var(--primary);
+	border-radius: 8px;
 }
 
 .footer {
-    display: block;
-    margin-top: 14px;
-    font-size: 13px;
-    color: var(--muted-foreground);
+	display: block;
+	margin-top: 14px;
+	font-size: 13px;
+	color: var(--muted-foreground);
 }
 
 .project-modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3000;
-    padding: 20px;
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.45);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3000;
+	padding: 20px;
 }
 
 .project-modal {
-    position: relative;
-    width: min(700px, 95vw);
-    max-height: 90vh;
-    overflow: auto;
-    background: var(--card);
-    color: var(--primary);
-    border: 8px double var(--border);
-    padding: 24px;
-    text-align: left;
+	position: relative;
+	width: min(700px, 95vw);
+	max-height: 90vh;
+	overflow: auto;
+	background: var(--card);
+	color: var(--primary);
+	border: 8px double var(--border);
+	padding: 24px;
+	text-align: left;
 }
 
 .modal-close {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: transparent;
-    border: none;
-    font-size: 28px;
-    line-height: 1;
-    cursor: pointer;
-    color: var(--primary);
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	background: transparent;
+	border: none;
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+	color: var(--primary);
 }
 
 .modal-image {
-    width: 100%;
-    height: clamp(240px, 42vh, 380px);
-    object-fit: contain;
-    background: var(--background);
-    margin-bottom: 14px;
+	width: 100%;
+	height: clamp(240px, 42vh, 380px);
+	object-fit: contain;
+	background: var(--background);
+	margin-bottom: 14px;
 }
 
 .modal-slideshow-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: 12px;
 }
 
 .slide-button {
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--primary);
-    padding: 6px 10px;
-    cursor: pointer;
+	border: 1px solid var(--border);
+	background: var(--card);
+	color: var(--primary);
+	padding: 6px 10px;
+	cursor: pointer;
 }
 
 .slide-indicator {
-    font-size: 14px;
-    color: var(--muted-foreground);
+	font-size: 14px;
+	color: var(--muted-foreground);
 }
 
 .modal-time {
-    margin: 6px 0;
-    padding: 0;
-    font-size: 14px;
-    color: var(--muted-foreground);
+	margin: 6px 0;
+	padding: 0;
+	font-size: 14px;
+	color: var(--muted-foreground);
 }
 
 .modal-description {
-    margin: 10px 0 14px;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    width: 100%;
+	margin: 10px 0 14px;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 400;
+	width: 100%;
+}
+ 
+.github-button {
+	border: none;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: .4s;
+	cursor: pointer;
+	position: relative;
+	background-color: rgb(31, 31, 31);
+	overflow: hidden;
+}
+
+.github-svg {
+  	transition-duration: .3s;
+}
+
+.github-svg path {
+  	fill: white;
+}
+
+.github-text {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	width: 120px;
+	font-weight: 600;
+	opacity: 0;
+	transition-duration: .4s;
+	margin-left: 73px;
+}
+
+.github-button:hover {
+	width: 110px;
+	transition-duration: .4s;
+	border-radius: 30px;
+}
+
+.github-button:hover .github-text {
+	opacity: 1;
+	transition-duration: .4s;
+}
+
+.github-button:hover .github-svg {
+	opacity: 0;
+	transition-duration: .3s;
 }
