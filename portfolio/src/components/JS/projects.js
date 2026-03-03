@@ -34,7 +34,7 @@ export const projectsData = [
         images: CareerCanvas,
         title: "CareerCanvas",
         time: "January 2026",
-        desc: "testing",
+        desc: "In just three days, I developed a full-stack job application organizer designed to streamline the modern job search and alleviate the mental load for candidates. The platform features an applications dashboard with a visual pipeline to track progress from wishlist to offer, a Resume Studio for rapid customization of master templates, and a response tracker to centralize employer communications and ensure timely follow-ups.",
         visible: true,
         tags: ["Java Script", "HTML", "SQLite", "Docker", "Hackathon", "CSS", "Frontend"],
         github: "https://github.com/401-hackathon-EDSS/401-hackathon"
