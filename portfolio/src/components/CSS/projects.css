@@ -187,6 +187,11 @@
 	color: var(--muted-foreground);
 }
 
+.modal-title {
+	font-size: 30px;
+	margin-top: -20px;
+}
+
 .modal-description {
 	margin: 10px 0 14px;
 	padding: 0;

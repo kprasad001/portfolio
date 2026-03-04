@@ -6,7 +6,7 @@ function AboutMe() {
 
 	return (
 		<section className='about-section'>
-			<h1>Little Bit About Me</h1>
+			<h1>A Little Bit About Me</h1>
 			<div className='line'></div>
 			<div className='about-content'>
 				<div className='about-text'>
@@ -44,7 +44,7 @@ function AboutMe() {
 						<Rocket/>
 					</div>
 					<p>
-						Delivering end-to-end solutions from concept to deployment..
+						Delivering end-to-end solutions from concept to deployment.
 					</p>
 				</div>
 			</div>

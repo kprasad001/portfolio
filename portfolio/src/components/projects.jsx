@@ -227,7 +227,7 @@ function Projects() {
                                 </a>
                             </div>
                         )}
-                        <h3>{selectedProject.title}</h3>
+                        <h3 className='modal-title'>{selectedProject.title}</h3>
                         <p className='modal-time'>{selectedProject.time}</p>
                         <p className='modal-description'>{selectedProject.desc}</p>
                         <div className='card-tags'>
