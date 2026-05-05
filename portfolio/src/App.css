@@ -11,25 +11,20 @@ nav {
 	top: 0;
 	left: 0;
 	display: flex;
-	justify-content: left;
-	background-color: var(--background);
-	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100dvh;
 	z-index: 2000;
-	font-size: 26px;
-	padding: 15px;
+	font-size: 20px;
+	padding: 100px 14px;
+	margin-left: 40px;
 	color: var(--primary);
-	border-bottom-style: solid;
-	border-color: var(--border);
 }
 
-nav p {
-	text-align: left;
-	font-weight: 500;
-	color: var(--background);
-	background-color: var(--primary);
-	border-radius: 10px ;
+main {
+	width: 100%;
+	padding-left: clamp(180px, 14vw, 220px);
 }
-
 
 a:hover {
 	color: var(--accent);
@@ -74,26 +69,27 @@ a:hover {
 
 
 nav .nav-links {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: static;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: right;
+	justify-content: center;
+	gap: 16px;
 		a {
 			position: relative;
 			display: block;
 			text-transform: uppercase;
-			margin: 20px 0;
-			padding: 10px 20px;
+			margin: 0;
+			padding: 10px 14px;
 			text-decoration: none;
 			color: var(--primary);
 			font-family: sans-serif;
-			font-size: 18px;
-			font-weight: 600;
+			font-size: 22px;
+			font-weight: 700;
 			transition: .5s;
 			z-index: 1;
+			min-width: 132px;
+			text-align: center;
 			&:before {
 				content: '';
 				position: absolute;
@@ -133,6 +129,32 @@ nav .nav-links {
 			}
 		}
 	}
+
+@media (max-width: 900px) {
+	nav {
+		width: 100%;
+		height: auto;
+		padding: 16px 14px;
+		border-right-style: none;
+		border-bottom-style: solid;
+	}
+
+	main {
+		padding-left: 0;
+	}
+
+	nav .nav-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	nav .nav-links a {
+		min-width: 0;
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+}
 
 footer {
 	display: flex;

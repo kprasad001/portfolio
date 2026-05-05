@@ -12,27 +12,25 @@ function App() {
 	return (
 		<>
 		<nav>
-			<p>Kishan Prasad</p>
 			<div className="nav-links">
-				<Link to="/">Home</Link>
-				<Link to="/projects">Projects</Link>
-				<Link to='/experience'>Experience</Link>
-				<Link to="/about">About</Link>
-				<Link to="/contact">Contact</Link>
+				<a href="#home-section">Home</a>
+				<a href="#projects-section">Projects</a>
+				<a href='#experience-section'>Experience</a>
+				<a href="#about-section">About</a>
+				<a href="#contact-section">Contact</a>
 			</div>
 		</nav>
 		<main>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/experience" element={<Experience />} />
-				<Route path="/about" element={<AboutMe />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
+			<Home/>
+			<Projects/>
+			<Experience/>
+			<AboutMe/>
+			<Contact/>
 		</main>
 		<footer>
 			<h3>Full Stack Developer</h3>
 			<p>Kishan Prasad</p>
+			<h3>kkprasad@ualberta.ca</h3>
 			<div className='line2'></div>
 			<div className="social-media">
 				<a href="https://github.com/kprasad001" className="github">

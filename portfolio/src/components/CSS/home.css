@@ -1,33 +1,41 @@
 .introduction {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	justify-content:baseline;
+	flex-direction: row;
 	align-items: center;
-	padding-left: 300px;
+	padding-left: 100px;
 	padding-right: 300px;
 	padding-top: 75px;
 	padding-bottom: 75px;
 	max-width: 100%;
-	background-color: var(--background);
+	background: transparent;
+	gap: 100px;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 }
 
 .introduction .role-badge {
-	width: fit-content;
+	width: min(920px, 100%);
 	border: solid 1px;
 	border-color: var(--border);
 	padding: 10px 18px;
 	font-weight: 500;
 	font-size: 20px;
-	color: var(--primary);
+	color: var(--background);
 	letter-spacing: 0.04em;
 	border-radius: 999px;
-	background-color: var(--card);
+	background-color: var(--primary);
 }
 
 .introduction h1 {
+	width: min(920px, 100%);
 	margin-top: 26px;
-	width: fit-content;
 	padding: 8px 15px;
 	font-weight: 600;
 	font-size: 56px;
@@ -54,16 +62,11 @@
 	color: var(--muted-foreground);
 }
 
-.introduction .button {
-	margin-top: 55px;
-	background-color: var(--primary);
-	color: var(--accent-foreground);
-}
-
 .social-media {
 	display: flex;
 	gap: 50px;
-	margin-top: 48px;
+	margin-top: 40px;
+	justify-content: center;
 }
 
 .social-media a {
@@ -96,6 +99,14 @@
 	transition: border 300ms, color 300ms;
 	user-select: none;
 	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+	max-width: fit-content;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--primary);
+	color: var(--accent-foreground);
+	justify-content: center;
+	align-self: center;
 }
 
 .button span {

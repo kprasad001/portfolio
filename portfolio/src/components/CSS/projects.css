@@ -8,17 +8,17 @@
 	padding-top: 75px;
 	padding-bottom: 75px;
 	max-width: 100%;
-	background-color: var(--background);
 }
 
 .project-filters {
 	width: 100%;
-	max-width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
-	margin-bottom:-50px;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .filter-chip {
@@ -46,15 +46,69 @@
 
 .grid {
 	width: 100%;
-	max-width: 1200px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(425px, 300px));
-	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	overflow-y: hidden;
 	gap: 28px;
-	margin-top: 70px
+	padding: 125px;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	background-image: url(../assets/floor.jpg);
+	background-repeat: no-repeat;
+	background-size: 1000px;
+	background-position: center;
+}
+
+.grid::-webkit-scrollbar {
+	height: 8px;
+}
+
+.grid::-webkit-scrollbar-track {
+	background: color-mix(in srgb, var(--primary) 10%, transparent);
+	border-radius: 4px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+	background: color-mix(in srgb, var(--primary) 40%, transparent);
+	border-radius: 4px;
+}
+
+.grid::-webkit-scrollbar-thumb:hover {
+	background: color-mix(in srgb, var(--primary) 60%, transparent);
+}
+
+@media (max-width: 1024px) {
+	.grid {
+		margin-top: 50px;
+		gap: 20px;
+	}
+
+	.card {
+		width: 360px;
+		min-width: 360px;
+	}
+}
+
+@media (max-width: 640px) {
+	.grid {
+		margin-top: 40px;
+		gap: 16px;
+	}
+
+	.card {
+		width: 290px;
+		min-width: 290px;
+	}
+
+	.card-image {
+		height: 160px;
+	}
 }
 
 .card {
+	flex-shrink: 0;
+	width: 400px;
 	display: grid;
 	border-radius: 6px;
 	border: 7px double var(--border);
