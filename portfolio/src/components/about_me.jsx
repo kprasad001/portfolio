@@ -4,13 +4,30 @@ import './CSS/about_me.css'
 
 function AboutMe() {
 
+	const [selectedFact, setSelectedFact] = useState(0);
+
+	const aboutMeData = [
+		{
+			id: 1,
+			img: kishan1,
+			desc: "I love hiking"
+		},
+		{
+			id: 2,
+			img: kishan1,
+			desc: "I love pooping"
+		},
+	];
+
 	return (
 		<section id="about-section" className='about'>
 			<h1>more about me</h1>
+			{aboutMeData.map((fact) => (
 			<section className='card'>
-				<p>I love hiking</p>
-				<img src={kishan1}></img>
+				<img src={fact.img}></img>
+				<p>{fact.desc}</p>
 			</section>
+			))}
 		</section>
 	)
 }

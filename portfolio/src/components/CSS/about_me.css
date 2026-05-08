@@ -6,22 +6,26 @@
 
 	.card {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-self: center;
 		align-items: center;
 		width: auto;
-		border-radius: 10px;
-		background: var(--background);
-
+		border: 0px;
+		background: transparent;
+		gap: 1em;
 		
 		p {
 			font-size: 18px;
-			padding: 25px 25px;
+			padding: 10px 10px;
 			text-align: center;
+			background: var(--primary);
+			color: var(--background);
+			border-radius: 10px;
 		}
 
 		img {
+			border-radius: 30px;
 			max-height: 300px;
 			justify-content: right;
 		}
