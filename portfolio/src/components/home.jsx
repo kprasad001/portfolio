@@ -1,38 +1,51 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Newspaper } from 'lucide-react';
 import './CSS/home.css';
 import resume from './assets/Kishan_Prasad-Resume.pdf';
-import kishan2 from './assets/kishan2.jpg';
+import kishan1 from './assets/kishan1.jpg';
+import emoji from './assets/emoji.png';
+import 'animate.css';
 
 function Home() {
 
 	return (
 		<section id="home-section" className='introduction'>
-			<section className="info"> 
-				<p className='role-badge'>Full-Stack Developer</p>
-				<h1>Kishan Prasad</h1>
-				<div className='line'></div>
-				<h2>Computing Science, Software Practice Specialization</h2>
-				<h2>Minor in Economics</h2>
-				<p className='intro-summary'>Hello! I am a CS student trying my hardest. I've been developing projects from scratch using agile 
-					development, DevOps, and AI. I like working across the stack and learning from every project 
-					I build.</p>
-				<a className='button' href={resume} download='Kishan_Prasad_Resume.pdf'>
-					<span>Resume</span>
-				</a>
-				<div className="social-media">
-					<a href="https://github.com/kprasad001" className="github" target='_blank' rel='noreferrer'>
-						<Github/>
-					</a>
-					<a href="https://www.linkedin.com/in/kkprasad1/" className="linked-in-icon" target='_blank' rel='noreferrer'>
-						<Linkedin/>
-					</a>
-					<a href="mailto:kkprasad@ualberta.ca" className="mail-icon">
-						<Mail/>
-					</a>
-				</div>
+			<section className='intro-flex animate__animated animate__fadeIn'>
+				<img className='self' src={kishan1} width={200}></img>
+				<section className='name-flex'>
+					<p className='name'>Kishan Prasad</p>
+					<p className='title'>Full-Stack Software Engineer</p>
+					<section className='icons'>
+						<a href="https://github.com/kprasad001" className="github">
+							<Github/>
+						</a>
+						<a href="https://www.linkedin.com/in/kkprasad1/" className="linked-in-icon">
+							<Linkedin/>
+						</a>
+						<a href="mailto:kkprasad@ualberta.ca" className="mail-icon">
+							<Mail/>
+						</a>
+						<a href={resume} download="Kishan_Prasad-Resume.pdf" className="newspaper-icon">
+							<Newspaper/>
+						</a>
+					</section>
+				</section>
 			</section>
-			<section classname="picture">
-				<img src={kishan2} width="600"/>
+			<h1>a little bit about me</h1>
+			<section className='about-me'>
+				<ul>
+					<li>studying <b>CS w/ Software Spec. </b> with a minor in <b>Economics</b> @ <a href='https://www.ualberta.ca/en/computing-science/index.html'>UAlberta</a></li>
+					<li>currently a full-stack developer @ <a href='https://albertabionix.ca/'>Alberta Bionix</a></li>
+					<li>participated in <b>four hackathons,</b> <b>winning two</b> of them</li>
+				</ul>
+			</section>
+			<section className='cookin'>
+				<h1>under construction</h1>
+				<section className='cookin-card'>
+					<ul>
+						<li>releasing an app for <a href='https://www.edss.ca/home'>EDSS</a></li>
+						<li>building an app to combine <b>Uber</b> and <a href='https://su.ualberta.ca/these-are-your-resources/this-is-your-wellness/safewalk/'>Safewalk</a></li>
+					</ul>
+				</section>
 			</section>
 		</section>
 	)

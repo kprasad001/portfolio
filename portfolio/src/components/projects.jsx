@@ -160,8 +160,7 @@ function Projects() {
 
 	return (
 		<section id="projects-section" className='projects'>
-            <h1>Projects</h1>
-            <div className='line'></div>
+            <h1>some of my projects</h1>
 
             <div className='project-filters'>
                 {getAvailableTags().map((tag) => (
@@ -179,7 +178,7 @@ function Projects() {
             <div className='grid'>
                 {filteredProjects.map((project) => (
                     <article
-                        className='card'
+                        className='card animate__animated animate__slideInUp'
                         key={project.id}
                         onClick={() => openModal(project)}
                         role='button'
