@@ -178,7 +178,7 @@ function Projects() {
             <div className='grid'>
                 {filteredProjects.map((project) => (
                     <article
-                        className='card animate__animated animate__slideInUp'
+                        className='card animate__animated animate__fadeInUp'
                         key={project.id}
                         onClick={() => openModal(project)}
                         role='button'
