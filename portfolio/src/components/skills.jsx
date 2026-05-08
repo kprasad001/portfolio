@@ -25,7 +25,7 @@ function Skills() {
     },
     {
       id: 'databases',
-      title: 'Databases',
+      title: 'Database',
       items: [
         { name: 'SQLite', icon: 'devicon-sqlite-plain colored'},
         { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
@@ -50,8 +50,8 @@ function Skills() {
         { name: 'Python', icon: 'devicon-python-plain colored' },
         { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
         { name: 'TypeScript', icon: 'devicon-typescript-plain colored' },
-        { name: 'PHP', icon: 'devicon-php-plain colored' },
         { name: 'Java', icon: 'devicon-java-plain colored' },
+        { name: 'PHP', icon: 'devicon-php-plain colored' },
         { name: 'C', icon: 'devicon-c-plain colored' },
         { name: 'C++', icon: 'devicon-cplusplus-plain colored' },
         { name: 'HTML', icon: 'devicon-html5-plain colored' },

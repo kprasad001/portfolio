@@ -20,11 +20,10 @@ function Contact() {
 
 	return (
 		<section id="contact-section" className='contact'>
-            <h1>Get In Touch</h1>
-            <div className='line'></div>
-			<p className='contact-intro'>
-				I’m currently open to internships, co-op opportunities, and project collaborations.
-			</p>
+            <h1>get in touch</h1>
+			<li className='contact-intro'>
+				currently open to internships, co-op opportunities, and project collaborations.
+			</li>
 			<form className='contact-form' onSubmit={handleSubmit}>
 				<label htmlFor='name'>Name</label>
 				<input id='name' name='name' type='text' placeholder='Your name' />
@@ -34,8 +33,7 @@ function Contact() {
 
 				<label htmlFor='message'>Message</label>
 				<textarea id='message' name='message' rows='5' placeholder='Write your message here...' />
-
-				<button type='submit' className='contact-btn'>Send Message</button>
+				<button type='submit' className='contact-btn'><span class="text">Send message</span><span>Thanks!</span></button>
 			</form>
 		</section>
 	)

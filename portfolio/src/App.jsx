@@ -68,6 +68,7 @@ function App() {
 			<Skills/>
 			<Projects/>
 			<AboutMe/>
+			<Contact/>
 			
 		</main>
 		<div className='line'></div>
