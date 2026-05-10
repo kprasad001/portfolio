@@ -35,15 +35,34 @@ function App() {
 		return () => observer.disconnect()
 	}, [])
 
+	function jumpToHome() {
+		document.getElementById('home-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	};
+	function jumpToSkills() {
+		document.getElementById('skills-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	};
+	function jumpToProjects() {
+		document.getElementById('projects-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	};
+	function jumpToAbout() {
+		document.getElementById('about-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	};
+	function jumpToContact() {
+		document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	};
+
+
+
+
 	return (
 		<>
 		<nav className='left'>
 			<div className="nav-links">
-				<a href="#home-section">Home</a>
-				<a href="#skills-section">Skills</a>
-				<a href="#projects-section">Projects</a>
-				<a href="#about-section">About</a>
-				<a href="#contact-section">Contact</a>
+				<a href="#home-section" onClick={(event) => { event.preventDefault(); jumpToHome() }}>Home</a>
+				<a href="#skills-section" onClick={(event) => { event.preventDefault(); jumpToSkills() }}>Skills</a>
+				<a href="#projects-section" onClick={(event) => { event.preventDefault(); jumpToProjects() }}>Projects</a>
+				<a href="#about-section" onClick={(event) => { event.preventDefault(); jumpToAbout() }}>About</a>
+				<a href="#contact-section" onClick={(event) => { event.preventDefault(); jumpToContact() }}>Contact</a>
 			</div>
 		</nav>
 		<nav className={`right${showRightIcons ? ' right-visible' : ''}`}>
