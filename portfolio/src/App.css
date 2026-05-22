@@ -185,28 +185,9 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-	.left {
-		width: 100%;
-		height: auto;
-		padding: 16px 14px;
-		border-right-style: none;
-		border-bottom-style: solid;
-	}
-
-	.left {
-		padding-left: 0;
-	}
-
-	.left .nav-links {
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 10px;
-	}
-
-	.left .nav-links a {
-		min-width: 0;
-		padding: 8px 12px;
-		font-size: 14px;
+	.left,
+	.right {
+		display: none !important;
 	}
 }
 
