@@ -34,7 +34,7 @@ function Home() {
 			<section className='about-me'>
 				<ul>
 					<li>studying <b>CS w/ Software Spec. </b> with a minor in <b>Economics</b> @ <a href='https://www.ualberta.ca/en/computing-science/index.html'>UAlberta</a></li>
-					<li>currently a full-stack developer @ <a href='https://albertabionix.ca/'>Alberta Bionix</a></li>
+					<li>currently a <b>Software Junior Lead</b> & <b>Full-Stack Developer</b> @ <a href='https://albertabionix.ca/'>Alberta Bionix</a></li>
 					<li>participated in <b>four hackathons,</b> <b>winning two</b> of them</li>
 				</ul>
 			</section>

@@ -250,7 +250,7 @@ h1 {
 	overflow: auto;
 	background: var(--card);
 	color: var(--primary);
-	border: 8px double var(--border);
+	border: 8px double var(--primary);
 	padding: 24px;
 	text-align: left;
 }
@@ -284,7 +284,7 @@ h1 {
 }
 
 .slide-button {
-	border: 1px solid var(--border);
+	border: 1px solid var(--primary);
 	background: var(--card);
 	color: var(--primary);
 	padding: 6px 10px;
