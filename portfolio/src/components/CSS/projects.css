@@ -10,7 +10,7 @@
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.9em;
 	font-style: italic;
 	margin-bottom: 20px;
 }
@@ -53,9 +53,10 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 64px;
-	padding: 48px 0 24px;
+	gap: 60px;
+	padding: 48px 0 0;
 	position: relative;
+	margin-left: 75px;
 	
 }
 
@@ -111,10 +112,9 @@ h1 {
 
 .card {
 	max-width: 800px;
-	width: min(100%, 800px);
+	width: min(100%, 650px);
 	height: 250px;
 	display: grid;
-	border-radius: 0;
 	background:
 		linear-gradient(180deg, color-mix(in srgb, var(--card) 96%, white), var(--card));
 	border: 5px solid var(--primary);
@@ -167,7 +167,7 @@ h1 {
 .card-tags {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 8px;
+	gap: 6px;
 	margin-top: 6px;
 }
 
@@ -196,11 +196,11 @@ h1 {
 }
 
 .card:nth-child(odd) {
-	grid-template-columns: 1.15fr 0.85fr;
+	grid-template-columns: 1.1fr 0.9fr;
 }
 
 .card:nth-child(even) {
-	grid-template-columns: 0.85fr 1.15fr;
+	grid-template-columns: 0.9fr 1.1fr;
 }
 
 .card:nth-child(even) .card-image {

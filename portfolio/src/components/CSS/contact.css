@@ -11,6 +11,10 @@
 	max-width: 100%;
 	background: transparent;
 
+	h1 {
+		font-size: 1.9rem;
+	}
+
 	.contact-intro {
 		font-size: 1.3em;
 		list-style-type: circle;

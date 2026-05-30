@@ -5,6 +5,10 @@
 	gap: 1em;
 	margin-top: 50px;
 
+	h1 {
+		font-size: 1.9rem;
+	}
+
 	.cards {
 		display: flex;
 		flex-direction: column;
