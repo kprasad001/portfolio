@@ -1,5 +1,5 @@
 .experience {
-	width: 500px;
+	width: 450px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -9,13 +9,13 @@
 
 	h1 {
 		align-self: center;
-		font-size: 2em;
+		font-size: 1.9em;
 		font-style: italic;
 		margin-top: 10px;
 	}
 
 	ul {
-		font-size: 1.3em;
+		font-size: 1.25em;
 		list-style-type: circle;
 		text-align: left;
 
