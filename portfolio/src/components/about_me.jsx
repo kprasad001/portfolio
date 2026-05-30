@@ -2,6 +2,8 @@ import hiking from './assets/about-me/hiking.jpg'
 import smashbros from './assets/about-me/smashbros.jpeg'
 import skiing from './assets/about-me/skiing.jpg'
 import ramen from './assets/about-me/ramen.jpg'
+import camping from './assets/about-me/camping.jpeg'
+import paddleboarding from './assets/about-me/paddleboarding.jpeg'
 import './CSS/about_me.css'
 import { useState } from 'react';
 
@@ -27,6 +29,16 @@ function AboutMe() {
 			id: 4,
 			img: ramen,
 			desc: 'Ramen is delicious and everyone else who thinks otherwise is wrong.'
+		},
+		{
+			id: 5,
+			img: camping,
+			desc: 'I spend my summers camping and drinking with my friends.'
+		},
+		{
+			id: 6,
+			img: paddleboarding,
+			desc: 'In Vancouver, we went paddleboarding and saw seals!'
 		},
 	];
 

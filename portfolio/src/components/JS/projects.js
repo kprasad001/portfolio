@@ -15,8 +15,32 @@ const neuromotionImages = getImagesForFolder('neuromotion')
 const EMGreaderImages = getImagesForFolder('EMGreader')
 const quokkaImages = getImagesForFolder('quokka')
 const CareerCanvas = getImagesForFolder('careercanvas')
+const socialDist = getImagesForFolder('socialdist')
+const nutriPlate = getImagesForFolder('nutriplate')
 
 export const projectsData = [
+    {
+        id: 7,
+        img: nutriPlate[0],
+        images: nutriPlate,
+        title: "NutriPlate",
+        time: "May 2026",
+        desc: "NutriPlate helps users build balanced diets using guidelines from Canada's Food Guide. The platform organizes foods into macronutrient categories such as proteins, carbohydrates, healthy fats, and fibre, making it easier for users to understand what a balanced plate looks like and plan their grocery shopping accordingly. Users can browse different food options while comparing prices across grocery stores to make choices that fit both their nutritional goals and budget. To make healthy eating more practical and accessible, NutriPlate also includes an AI-powered recipe generator that creates meal ideas based on ingredients added to a user’s virtual cart. This allows users to discover simple, nutritious, and affordable meals while reducing food waste and making use of ingredients they already plan to purchase.",
+        visible: true,
+        tags: ["Django", "Python", "RestAPI",  "React", "AI"],
+        github: "https://github.com/kprasad001/IBM-Hackathon-Health-Navigator"
+    },
+    {
+        id: 6,
+        img: socialDist[0],
+        images: socialDist,
+        title: "Social Distribution",
+        time: "January 2026 - April 2026",
+        desc: "A distributed social media platform where users can sign up, create posts, and follow other authors across connected servers. Posts can be written in plain text, Markdown, or shared as images, and authors can choose whether their content is visible to everyone, just their followers, or only close friends. A personal stream pulls together posts from everyone you follow alongside public content, keeping everything in one place. The platform has a full friend and follower system, where two people mutually following each other automatically become friends and can share more private content with each other. Node administrators have full control over user management and can link their server to other nodes to share content across the broader network.",
+        visible: true,
+        tags: ["Django", "Python", "RestAPI", "HTML", "CSS", "QA", "PostgreSQL"],
+        github: ""
+    },
     {
         id: 1,
         img: opblockImages[0],
@@ -26,7 +50,7 @@ export const projectsData = [
         desc: "Developed in just three days, this full-stack job application organizer reduces the mental load of modern recruiting by providing a centralized Applications Dashboard to visualize the hiring pipeline from wishlist to offer. The platform features a Resume Studio for rapid template customization and a Response Tracker to log employer communications, ensuring candidates stay organized and proactive throughout their search.",
         visible: true,
         tags: ["JavaScript", "HTML", "CSS", "Flask", "SQLite", "Docker", "RestAPI"],
-        github: "https://github.com/SirOrangePeel/platformagnostic-OpBlock"
+        github: ""
     },
     {
         id: 2,
@@ -66,10 +90,10 @@ export const projectsData = [
         img: quokkaImages[0],
         images: quokkaImages,
         title: "Quokka Puff Events",
-        time: "September 2025",
+        time: "September 2025 - December 2025",
         desc: "We developed a mobile application that allows people to sign up for events that are popular and fill up fast. We want to ensure that people with limitations, such as work or disability, can sign up for these events fairly and without having to sit and refresh a webpage until they have a chance to reserve a spot. To that end, we implemented an app that uses a lottery system instead of a first-come, first-served basis.",
         visible: true,
         tags: ["Java", "QA", "Mobile App", "RestAPI"],
         github: "https://github.com/quokka-CMPUT301F25/quokka-puffs-events"
-    }
+    },
 ];
