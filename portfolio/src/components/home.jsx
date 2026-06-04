@@ -10,7 +10,7 @@ function Home() {
 	return (
 		<section id="home-section" className='introduction'>
 			<section className='intro-flex animate__animated animate__fadeIn'>
-				<img className='self' src={kishan1} width={200}></img>
+				<img className='self' src={kishan1}></img>
 				<section className='name-flex'>
 					<p className='name'>Kishan Prasad</p>
 					<p className='title'>Full-Stack Software Engineer</p>

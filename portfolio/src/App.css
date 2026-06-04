@@ -1,5 +1,8 @@
 #root {
-	max-width: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -184,7 +187,7 @@ a:hover {
 	opacity: 1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
 	.left,
 	.right {
 		display: none !important;
@@ -233,4 +236,26 @@ footer .social-media a:hover {
 footer .social-media svg {
 	width: 32px;
 	height: 32px;
+}
+
+@media (max-width: 500px) {
+	footer {
+		margin-top: 0;
+		display: flex;
+		margin: auto;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		padding: 2px 0 100px;
+		color: var(--background);
+		gap: 8px;
+	}
+
+	footer h3 {
+		color: var(--primary);
+		font-weight: 700;
+		width: 200px;
+		font-size: 24px;
+	}
+
 }

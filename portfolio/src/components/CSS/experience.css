@@ -1,10 +1,8 @@
 .experience {
-	width: 450px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	margin-top: 1em;
 
 	h1 {
@@ -14,46 +12,118 @@
 		margin-top: 10px;
 	}
 
-	ul {
-		font-size: 1.25em;
-		list-style-type: circle;
-		text-align: left;
+	.experience-flex {
+		width: 450px;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
 
-		li {
-			margin-top: 10px;
 
-			a {
-				color: var(--secondary);
-				text-decoration: none;
-				font-size: inherit;
-				line-height: inherit;
-				display: inline-block;
-				margin: 0;
-				padding-bottom: 2px;
-				background-image: linear-gradient(currentColor, currentColor);
-				background-repeat: no-repeat;
-				background-position: 0 100%;
-				background-size: 0% 2px;
-				transition: background-size 200ms ease;
-				font-weight: 700;
+		ul {
+			font-size: 1.25em;
+			list-style-type: circle;
+			text-align: left;
+
+			li {
+				margin-top: 10px;
+
+				a {
+					color: var(--secondary);
+					text-decoration: none;
+					font-size: inherit;
+					line-height: inherit;
+					display: inline-block;
+					margin: 0;
+					padding-bottom: 2px;
+					background-image: linear-gradient(currentColor, currentColor);
+					background-repeat: no-repeat;
+					background-position: 0 100%;
+					background-size: 0% 2px;
+					transition: background-size 200ms ease;
+					font-weight: 700;
+				}
+
+				a:hover {
+					background-size: 100% 2px;
+				}
 			}
 
-			a:hover {
-				background-size: 100% 2px;
+			li:hover {
+				animation-name: shift;
+				animation-duration: 0.5s;
+				animation-fill-mode: forwards;
 			}
-		}
 
-		li:hover {
-			animation-name: shift;
-			animation-duration: 0.5s;
-			animation-fill-mode: forwards;
-		}
-
-		li:not(:hover) {
-			animation-name: shift-back;
-			animation-duration: 0.5s;
+			li:not(:hover) {
+				animation-name: shift-back;
+				animation-duration: 0.5s;
+			}
 		}
 	}
-
 }
 
+@media (max-width: 800px) {
+	.experience {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1em;
+
+		h1 {
+			align-self: center;
+			font-size: 1.9em;
+			font-style: italic;
+			margin-top: 10px;
+		}
+
+		.experience-flex {
+			width: 350px;
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+
+
+			ul {
+				font-size: 1.25em;
+				list-style-type: circle;
+				text-align: left;
+
+				li {
+					margin-top: 10px;
+
+					a {
+						color: var(--secondary);
+						text-decoration: none;
+						font-size: inherit;
+						line-height: inherit;
+						display: inline-block;
+						margin: 0;
+						padding-bottom: 2px;
+						background-image: linear-gradient(currentColor, currentColor);
+						background-repeat: no-repeat;
+						background-position: 0 100%;
+						background-size: 0% 2px;
+						transition: background-size 200ms ease;
+						font-weight: 700;
+					}
+
+					a:hover {
+						background-size: 100% 2px;
+					}
+				}
+
+				li:hover {
+					animation-name: shift;
+					animation-duration: 0.5s;
+					animation-fill-mode: forwards;
+				}
+
+				li:not(:hover) {
+					animation-name: shift-back;
+					animation-duration: 0.5s;
+				}
+			}
+		}
+	}
+}

@@ -22,17 +22,49 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+    box-sizing: border-box; 
+}
+
+@media (max-width: 500px) {
+	body {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		color: var(--primary);
+		background-color: var(--background);
+		background-image:
+			radial-gradient(circle at center, var(--background) 0%, transparent 70%),
+			repeating-linear-gradient(
+				90deg,
+				color-mix(in srgb, var(--primary) 8%, transparent),
+				color-mix(in srgb, var(--primary) 8%, transparent) 1px,
+				transparent 1px,
+				transparent 30px
+			),
+			repeating-linear-gradient(
+				0deg,
+				color-mix(in srgb, var(--primary) 8%, transparent),
+				color-mix(in srgb, var(--primary) 8%, transparent) 1px,
+				transparent 1px,
+				transparent 30px
+			);
+		background-size: 30px 30px;
+		background-attachment: fixed;
+	}
 }
 
 body {
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-    position: relative;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	color: var(--primary);
 	background-color: var(--background);
 	background-image:
@@ -54,7 +86,6 @@ body {
 	background-size: 30px 30px;
 	background-attachment: fixed;
 }
-
 
 
 @media (prefers-reduced-motion: reduce) {

@@ -3,8 +3,8 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	max-width: 800px;
-	margin: auto;
+	width: 100%;
+	margin: 0 0;
 	scroll-margin-top: 24px;
 	margin-top: 50px;
 }
@@ -16,12 +16,11 @@ h1 {
 }
 
 .project-filters {
-	width: 100%;
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
-	padding: 0 20px;
 	box-sizing: border-box;
 }
 
@@ -49,18 +48,23 @@ h1 {
 }
 
 .grid {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 60px;
-	padding: 48px 0 0;
 	position: relative;
-	margin-left: 50px;
 	
 }
 
 @media (max-width: 1024px) {
+
+	.project-filters {
+		width: 80%;
+		
+	}
+
 	.projects {
 		padding: 72px 24px 80px;
 	}
@@ -76,6 +80,7 @@ h1 {
 	}
 
 	.card-image {
+		height: 240px;
 		min-height: 0;
 	}
 }
@@ -92,7 +97,7 @@ h1 {
 
 	.card {
 		width: min(100%, 100%);
-		height: auto;
+		height: 250px;
 		grid-template-columns: 1fr;
 	}
 
@@ -103,16 +108,21 @@ h1 {
 
 	.card-content {
 		padding: 22px 18px 20px;
+		align-items: flex-start;
+		text-align: left;
 	}
 
 	.card-title {
 		font-size: 24px;
 	}
+
+	.card-tags {
+		justify-content: flex-start;
+	}
 }
 
 .card {
 	max-width: 800px;
-	width: min(100%, 700px);
 	height: 250px;
 	display: grid;
 	background:
@@ -219,22 +229,9 @@ h1 {
 }
 
 @media (max-width: 900px) {
-	.card,
-	.card:nth-child(even) {
-		grid-template-columns: 1fr;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	.card:nth-child(even) .card-image,
-	.card:nth-child(even) .card-content {
-		order: initial;
-		text-align: left;
-		align-items: stretch;
-	}
-
-	.card:nth-child(even) .card-tags {
-		justify-content: flex-start;
+	.grid {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.card-image {
@@ -243,6 +240,46 @@ h1 {
 
 	.card-title {
 		max-width: none;
+	}
+
+	.card-content {
+		align-items: flex-start;
+		text-align: left;
+	}
+}
+
+@media (max-width: 640px) {
+	.card,
+	.card:nth-child(odd),
+	.card:nth-child(even) {
+		height: auto;
+		grid-template-columns: 1fr;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.card-image,
+	.card:nth-child(even) .card-image {
+		order: initial;
+		height: 220px;
+		min-height: 0;
+	}
+
+	.card-content,
+	.card:nth-child(even) .card-content {
+		order: initial;
+		text-align: left;
+		align-items: flex-start;
+		padding: 22px 18px 20px;
+	}
+
+	.card-tags,
+	.card:nth-child(even) .card-tags {
+		justify-content: flex-start;
+	}
+
+	.card-title {
+		font-size: 24px;
 	}
 }
 
