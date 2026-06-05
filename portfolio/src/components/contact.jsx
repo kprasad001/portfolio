@@ -34,9 +34,11 @@ function Contact() {
 	return (
 		<section id="contact-section" className='contact'>
 			<h1>get in touch</h1>
-			<li className='contact-intro'>
-				currently open to internships, co-op opportunities, and project collaborations.
-			</li>
+				<ul>
+					<li className='contact-intro'>
+						currently open to internships, co-op opportunities, and project collaborations.
+					</li>
+				</ul>
 			<form className='contact-form' ref={formRef} onSubmit={handleSubmit}>
 				<label htmlFor='name'>Name</label>
 				<input id='name' name='from_name' type='text' placeholder='Your name' required />

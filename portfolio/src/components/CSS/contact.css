@@ -1,28 +1,26 @@
 .contact {
-	width: 500px;
-	margin: auto;
+	margin: 0 0;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	align-items: left;
 	margin-top: 50px;
 	padding-bottom: 75px;
-	max-width: 350px;
-	background: transparent;
 
 	h1 {
 		font-size: 1.9rem;
 	}
 
-	.contact-intro {
-		font-size: 1.3em;
+	ul {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.25em;
 		list-style-type: circle;
 		text-align: left;
-		max-width: 350px;
+		max-width: 450px;
 	}
-
-	
 
 	.contact-form {
 		display: flex;
