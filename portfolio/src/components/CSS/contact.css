@@ -127,6 +127,10 @@
 		width: 100%;
 	}
 
+	ul {
+		font-size: 1.25rem;
+	}
+
 	.contact .contact-form input,
 	.contact .contact-form textarea {
 		min-width: 0;
