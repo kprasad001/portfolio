@@ -35,6 +35,38 @@ function App() {
 		return () => observer.disconnect()
 	}, [])
 
+	// Open non-navigation links in a new tab (adds target and rel), and handle dynamic nodes
+	useEffect(() => {
+		const setExternalTarget = (el) => {
+			if (!el || !el.href) return
+			// don't modify navigation links (left nav) or hash/internal anchors
+			if (el.closest('.nav-links')) return
+			const href = el.getAttribute('href') || ''
+			if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return
+			try {
+				el.setAttribute('target', '_blank')
+				el.setAttribute('rel', 'noopener noreferrer')
+			} catch (e) {
+				// ignore
+			}
+		}
+
+		document.querySelectorAll('a').forEach(setExternalTarget)
+
+		const mo = new MutationObserver((mutations) => {
+			for (const m of mutations) {
+				for (const node of m.addedNodes) {
+					if (node.nodeType !== 1) continue
+					if (node.tagName === 'A') setExternalTarget(node)
+					if (node.querySelectorAll) node.querySelectorAll('a').forEach(setExternalTarget)
+				}
+			}
+		})
+
+		mo.observe(document.body, { childList: true, subtree: true })
+		return () => mo.disconnect()
+	}, [])
+
 	function jumpToHome() {
 		document.getElementById('home-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 	};

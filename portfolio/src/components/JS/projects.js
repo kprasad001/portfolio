@@ -47,7 +47,7 @@ export const projectsData = [
         images: opblockImages,
         title: "OpBlock",
         time: "February 2026",
-        desc: "Developed in just three days, this full-stack job application organizer reduces the mental load of modern recruiting by providing a centralized Applications Dashboard to visualize the hiring pipeline from wishlist to offer. The platform features a Resume Studio for rapid template customization and a Response Tracker to log employer communications, ensuring candidates stay organized and proactive throughout their search.",
+        desc: "OpBlock is an all-in-one platform that streamlines both user and admin workflows for a campus SafeWalk service. Through the user-facing interface, individuals can easily request a walker by selecting their desired pickup and drop-off locations. To ensure operational safety and efficiency, the system automatically enforces a 20-minute walking distance validation for all eligible pickup zones. Meanwhile, the administrator dashboard allows staff to assign available walkers to incoming requests in real time. Finally, the platform maintains a comprehensive, searchable history of all past, pending, and completed walk requests for complete oversight.",
         visible: true,
         tags: ["JavaScript", "HTML", "CSS", "Flask", "SQLite", "Docker", "RestAPI"],
         github: ""

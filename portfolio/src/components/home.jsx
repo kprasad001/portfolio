@@ -15,10 +15,10 @@ function Home() {
 					<p className='name'>Kishan Prasad</p>
 					<p className='title'>Full-Stack Software Engineer</p>
 					<section className='icons'>
-						<a href="https://github.com/kprasad001" className="github">
+						<a href="https://github.com/kprasad001" className="github" target="_blank" rel="noopener noreferrer">
 							<Github/>
 						</a>
-						<a href="https://www.linkedin.com/in/kkprasad1/" className="linked-in-icon">
+						<a href="https://www.linkedin.com/in/kkprasad1/" className="linked-in-icon" target="_blank" rel="noopener noreferrer">
 							<Linkedin/>
 						</a>
 						<a href="mailto:kkprasad@ualberta.ca" className="mail-icon">
