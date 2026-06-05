@@ -30,7 +30,7 @@
         .skills-grid {
             display: grid;
             grid-template-columns: 3fr;
-            width: 90%;
+            width: 100%;
             gap: 1.25rem;
             align-items: start;
             background-color: rgb(254, 239, 196, 0.5);
