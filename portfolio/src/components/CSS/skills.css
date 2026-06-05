@@ -50,32 +50,6 @@
     }
 }
 
-@media (max-width: 1200px) {
-    #skills-section {
-        margin-top: 10px;
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 3fr;
-            width: 60%;
-            gap: 1.25rem;
-            align-items: start;
-            background-color: rgb(254, 239, 196, 0.5);
-            padding: 2em;
-            border-radius: 15px;
-            border: 1px solid color-mix(in srgb, var(--background) 18%, transparent);
-            box-shadow:
-                0 18px 40px rgba(0, 0, 0, 0.16),
-                inset 0 1px 0 rgba(255, 255, 255, 0.08);
-        }
-
-        h1 {
-            margin-bottom: 0px;
-            font-size: 1.9em;
-        }
-
-    }
-}
 
 .skill-item {
 	background: var(--primary);
