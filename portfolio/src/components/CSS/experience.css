@@ -4,13 +4,12 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 1em;
 
 	h1 {
 		align-self: center;
 		font-size: 1.9em;
 		font-style: italic;
-		margin-top: 10px;
+		margin-bottom: 5px;
 	}
 
 	.experience-flex {

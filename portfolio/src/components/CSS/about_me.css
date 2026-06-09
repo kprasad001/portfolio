@@ -4,12 +4,12 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 1em;
-	margin-top: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
 
 	h1 {
 		font-size: 1.9rem;
+		margin-bottom: 0;
 	}
 
 	.cards {
