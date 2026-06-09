@@ -39,7 +39,7 @@ export const projectsData = [
         desc: "A distributed social media platform where users can sign up, create posts, and follow other authors across connected servers. Posts can be written in plain text, Markdown, or shared as images, and authors can choose whether their content is visible to everyone, just their followers, or only close friends. A personal stream pulls together posts from everyone you follow alongside public content, keeping everything in one place. The platform has a full friend and follower system, where two people mutually following each other automatically become friends and can share more private content with each other. Node administrators have full control over user management and can link their server to other nodes to share content across the broader network.",
         visible: true,
         tags: ["Django", "Python", "HTML/CSS", "QA", "PostgreSQL", "REST APIs"],
-        github: ""
+        github: "https://github.com/kprasad001/social-distribution"
     },
     {
         id: 1,
