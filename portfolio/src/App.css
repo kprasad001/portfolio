@@ -79,8 +79,11 @@
 
 
 main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 	width: 100%;
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
 a:hover {
