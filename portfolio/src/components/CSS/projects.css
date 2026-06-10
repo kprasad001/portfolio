@@ -47,14 +47,14 @@ h1 {
 }
 
 .grid {
+	max-width: 700px;
 	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 60px;
-	position: relative;
-	
+	position: relative;	
 }
 
 @media (max-width: 1024px) {
@@ -62,10 +62,6 @@ h1 {
 	.project-filters {
 		width: 80%;
 		
-	}
-
-	.projects {
-		padding: 72px 24px 80px;
 	}
 
 	.grid {
@@ -85,9 +81,6 @@ h1 {
 }
 
 @media (max-width: 640px) {
-	.projects {
-		padding: 56px 16px 64px;
-	}
 
 	.grid {
 		gap: 36px;
