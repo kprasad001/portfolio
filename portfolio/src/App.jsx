@@ -137,8 +137,8 @@ function App() {
 				<a href={resume} download="Kishan_Prasad-Resume.pdf" className="newspaper-icon">
 					<Newspaper/>
 				</a>
-				<h3>Kishan Prasad</h3>
 			</div>
+			<h3>Kishan Prasad</h3>
 		</footer>
 		</>
 	)

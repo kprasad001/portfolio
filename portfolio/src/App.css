@@ -198,67 +198,48 @@ a:hover {
 }
 
 footer {
-	margin-top: 0;
-	width: min(900px, 90%);
-	max-width: 900px;
-	display: flex;
-	margin: auto;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-	padding: 2px 0 100px;
-	color: var(--background);
-	gap: 8px;
+  margin: auto;
+  width: min(900px, 90%);
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2px 0 100px;
+  color: var(--background);
+  gap: 16px; /* Increased gap slightly so text doesn't hit icons */
 }
 
 footer h3 {
-	color: var(--primary);
-	margin: 0;
-	font-weight: 700;
-	text-align: right;
-	width: 735px;
-	font-size: 24px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right; /* Keeps text aligned to the right edge */
+  flex-grow: 1;      /* Forces the h3 to take up all available left space */
+  margin: 0;         /* Removed fixed 735px width and 20px margin */
 }
 
 footer .social-media {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	margin-top: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;   /* Prevents icons from squishing when text moves left */
 }
 
 footer .social-media a {
-	color: var(--primary);
-	transition: color 0.3s ease;
+  color: var(--primary);
+  transition: color 0.3s ease;
 }
 
 footer .social-media a:hover {
-	color: var(--secondary);
+  color: var(--secondary);
 }
 
 footer .social-media svg {
-	width: 32px;
-	height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 500px) {
-	footer {
-		margin-top: 0;
-		display: flex;
-		margin: auto;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: row;
-		padding: 2px 0 100px;
-		color: var(--background);
-		gap: 8px;
-	}
-
-	footer h3 {
-		color: var(--primary);
-		font-weight: 700;
-		width: 200px;
-		font-size: 24px;
-	}
-
+  /* Your desktop flex setup now handles the shrinking automatically! */
 }

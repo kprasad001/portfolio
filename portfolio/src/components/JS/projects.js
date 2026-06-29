@@ -17,8 +17,20 @@ const quokkaImages = getImagesForFolder('quokka')
 const CareerCanvas = getImagesForFolder('careercanvas')
 const socialDist = getImagesForFolder('socialdist')
 const nutriPlate = getImagesForFolder('nutriplate')
+const pomotime = getImagesForFolder('pomotime')
 
 export const projectsData = [
+    {
+        id: 8,
+        img: pomotime[0],
+        images: pomotime,
+        title: "Pomotime",
+        time: "June 2026",
+        desc: "Pomotime is an app that I made for my girlfriend for our anniversary where I did all the art and animation myself.",
+        visible: true,
+        tags: ["Typescript"],
+        github: "https://github.com/kprasad001/pomotime"
+    },
     {
         id: 7,
         img: nutriPlate[0],
@@ -79,7 +91,7 @@ export const projectsData = [
         img: EMGreaderImages[0],
         images: EMGreaderImages,
         title: "EMG Reader UI",
-        time: "October 2025",
+        time: "November 2025 - January 2026",
         desc: "As part of Alberta Bionix, I built a custom EMG data acquisition and analysis program to support the development of a responsive, user-controlled prosthetic leg. The software captures and processes signals from surface EMG electrodes positioned around the knee, allowing researchers to evaluate signal clarity and responsiveness across different placements. This work directly supported identifying optimal electrode locations for accurate, low-latency control of leg flexion and extension.",
         visible: true,
         tags: ["Python", "C", "C++", "EMGs","Arduino"],
