@@ -289,7 +289,7 @@ h1 {
 	width: min(700px, 95vw);
 	max-height: 90vh;
 	overflow: auto;
-	background: var(--card);
+	background: var(--background);
 	color: var(--primary);
 	border: 8px double var(--primary);
 	padding: 24px;
@@ -309,11 +309,12 @@ h1 {
 }
 
 .modal-image {
+	margin-top: 10px;
 	width: 100%;
 	height: clamp(240px, 42vh, 380px);
 	object-fit: contain;
-	background: var(--background);
 	margin-bottom: 14px;
+	background: white;
 }
 
 .modal-slideshow-controls {
@@ -326,10 +327,10 @@ h1 {
 
 .slide-button {
 	border: 1px solid var(--primary);
-	background: var(--card);
 	color: var(--primary);
 	padding: 6px 10px;
 	cursor: pointer;
+	background-color: var(--fourth);
 }
 
 .slide-indicator {
