@@ -117,8 +117,7 @@ h1 {
 	max-width: 800px;
 	height: 250px;
 	display: grid;
-	background:
-		linear-gradient(180deg, color-mix(in srgb, var(--card) 96%, white), var(--card));
+	background: var(--card);
 	border: 5px solid var(--primary);
 	box-shadow:
 		0 22px 50px rgba(0, 0, 0, 0.12),
@@ -152,7 +151,7 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 28%);
+	background: var(--card);
 }
 
 .card-title {
@@ -213,7 +212,6 @@ h1 {
 	order: 1;
 	text-align: right;
 	align-items: flex-end;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.45), transparent 28%);
 }
 
 .card:nth-child(even) .card-tags {

@@ -12,6 +12,24 @@
 	
 }
 
+/* Dark theme variables applied when html has data-theme="dark" */
+html[data-theme='dark'] {
+	--background: #3E0703;
+	--foreground: #E6EEF8;
+	--card: #3E0703;
+	--card-foreground: #3E0703;
+	--popover: #0f1724;
+	--popover-foreground: #E6EEF8;
+	--primary: #FFF0C4;
+	--secondary: #f1e8cc;
+	--links: #f3eddc;
+}
+
+/* Smooth transitions for theme changes */
+:root, html[data-theme='dark'] {
+	transition: background-color 240ms ease, color 240ms ease;
+}
+
 
 html {
 	font-size: var(--font-size);
@@ -117,6 +135,61 @@ h4 {
 	font-size: var(--text-base);
 	font-weight: var(--font-weight-medium);
 	line-height: 1.5;
+}
+
+section {
+	scroll-margin-top: 100px; 
+}
+
+/* Theme toggle button */
+.theme-checkbox {
+	margin-top: 20px;
+  --toggle-size: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 6.25em;
+  height: 3.45em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--primary)), color-stop(50%, var(--primary))) no-repeat;
+  background: -o-linear-gradient(left, var(--primary) 50%, var(--primary)50%) no-repeat;
+  background: linear-gradient(to right, var(--fourth) 50%, var(--primary) 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 99em;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
+  border: 2px solid var(--primary);
+}
+
+.theme-checkbox::before {
+  content: "";
+  width: 2.25em;
+  height: 2.25em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--primary)), color-stop(50%, var(--primary))) no-repeat;
+  background: -o-linear-gradient(left, var(--primary) 50%, var(--primary) 50%) no-repeat;
+  background: linear-gradient(to right, var(--primary) 50%, var(--primary) 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
+}
+
+.theme-checkbox:checked {
+  background-position: 100%;
 }
 
 

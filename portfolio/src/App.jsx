@@ -7,13 +7,36 @@ import Experience from './components/experience.jsx';
 import Contact from './components/contact.jsx';
 import Skills from './components/skills.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, Newspaper } from 'lucide-react';
+import { Github, Linkedin, Mail, Newspaper, Moon, Sun } from 'lucide-react';
 import resume from './components/assets/Kishan_Prasad-Resume.pdf';
 import kishan from './components/assets/kishan1.jpg';
 
 
 function App() {
 	const [showRightIcons, setShowRightIcons] = useState(false)
+	const [theme, setTheme] = useState(() => {
+		try {
+			const stored = localStorage.getItem('theme')
+			if (stored) return stored
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark'
+		} catch (e) {
+			// ignore
+		}
+		return 'light'
+	})
+
+	useEffect(() => {
+		try {
+			document.documentElement.setAttribute('data-theme', theme)
+			localStorage.setItem('theme', theme)
+		} catch (e) {
+			// ignore
+		}
+	}, [theme])
+
+	function toggleTheme() {
+		setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
+	}
 
 	useEffect(() => {
 		const homeSection = document.getElementById('home-section')
@@ -96,6 +119,8 @@ function App() {
 				<a href="#about-section" onClick={(event) => { event.preventDefault(); jumpToAbout() }}>About</a>
 				<a href="#contact-section" onClick={(event) => { event.preventDefault(); jumpToContact() }}>Contact</a>
 			</div>
+			<input type='checkbox' className="theme-checkbox" onClick={toggleTheme} aria-label="Toggle theme"/>
+				
 		</nav>
 		<nav className={`right${showRightIcons ? ' right-visible' : ''}`}>
 			<img className='self' src={kishan} width={200}></img>

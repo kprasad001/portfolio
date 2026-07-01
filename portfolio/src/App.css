@@ -10,6 +10,8 @@
 }
 
 .left {
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -136,7 +138,7 @@ a:hover {
 	display: block;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 10px 14px;
+	padding: 14px 10px 8px 10px;
 	text-decoration: none;
 	color: var(--primary);
 	font-family: sans-serif;
@@ -160,6 +162,7 @@ a:hover {
 	transform: scaleY(2);
 	opacity: 0;
 	transition: .3s;
+	pointer-events: none;
 }
 
 .left .nav-links a:after {
