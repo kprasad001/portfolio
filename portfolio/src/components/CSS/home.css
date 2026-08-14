@@ -96,15 +96,12 @@
 				}
 			}
 
-			li:hover {
-				animation-name: shift;
-				animation-duration: 0.5s;
-				animation-fill-mode: forwards;
+			li {
+				transition: transform 0.5s ease;
 			}
 
-			li:not(:hover) {
-				animation-name: shift-back;
-				animation-duration: 0.5s;
+			li:hover {
+				transform: translateX(20px);
 			}
 		}
 

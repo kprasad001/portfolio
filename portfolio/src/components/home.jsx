@@ -34,20 +34,11 @@ function Home() {
 			<section className='about-me'>
 				<ul>
 					<li>studying <b>CS w/ Software Spec. </b> with a minor in <b>Economics</b> @ <a href='https://www.ualberta.ca/en/computing-science/index.html'>UAlberta</a></li>
-					<li>currently a <b>Software Lead</b> & <b>Full-Stack Developer</b> @ <a href='https://albertabionix.ca/'>Alberta Bionix</a></li>
-					<li>volunteering as a <b>Full-Stack Developer</b> @ <a href='https://www.edss.ca/home'>EDSS</a></li>
+					<li>currently the <b>Software Lead</b> & <b>Full-Stack Developer</b> @ <a href='https://albertabionix.ca/'>Alberta Bionix</a></li>
+					<li>currently a <b>Technology Associate</b> @ <a href='https://www.nat.ltd/'>NAT</a></li>
+					<li>currently the <b>Webmaster</b> & <b>Executive</b> @ <a href='https://www.youngmindseye.com/executive-members'>Young Minds Eye</a></li>
 					<li>participated in <b>four hackathons,</b> <b>winning two</b> of them </li>
 				</ul>
-			</section>
-			<section className='cookin'>
-				<h1>under construction</h1>
-				<section className='cookin-card'>
-					<ul>
-						<li>releasing an app for <a href='https://www.edss.ca/home'>EDSS</a></li>
-						<li>building an app to combine <b>Uber</b> and <a href='https://su.ualberta.ca/these-are-your-resources/this-is-your-wellness/safewalk/'>Safewalk</a></li>
-						<li>making an <b>web application</b> for families</li>
-					</ul>
-				</section>
 			</section>
 		</section>
 	)
